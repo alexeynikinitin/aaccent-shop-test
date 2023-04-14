@@ -1,0 +1,27 @@
+.basketCounter {
+    background-color: var(--color-transparent-dark-corporate);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 20px;
+    width: 160px;
+    border-radius: 10px;
+
+    &__icon {
+
+    }
+
+    &__info {
+        color: var(--color-white);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+
+        span {
+            display: block;
+
+        }
+    }
+}
+

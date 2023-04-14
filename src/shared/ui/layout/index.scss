@@ -1,0 +1,9 @@
+.layout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &_content {
+        width: 1240px;
+    }
+}

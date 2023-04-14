@@ -1,0 +1,22 @@
+.logo {
+
+
+    &__link {
+        text-decoration: none;
+
+        &_img {
+            height: 42px;
+        }
+
+        &_text {
+            margin-top: 10px;
+            max-width: 145px;
+            width: 100%;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: var(--color-white);
+        }
+    }
+}
+

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
-const NotFound: FC = () => {
+const NotFoundPage: FC = () => {
   return <div>Not Found page</div>;
 };
 
-export default NotFound;
+export default NotFoundPage;
