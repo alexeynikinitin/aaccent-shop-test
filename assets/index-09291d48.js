@@ -1,0 +1,1 @@
+import{a as n,j as t}from"./index-6a6d3445.js";const a=()=>n("div",{className:"notFound",children:[t("h1",{className:"notFound__title",children:"Страница находится в разработке"}),t("img",{src:"/aaccent-shop-test/not-found/dev-page.png",alt:"img"})]});export{a as default};
