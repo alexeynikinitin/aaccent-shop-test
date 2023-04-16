@@ -7,3 +7,4 @@ export { Basket } from './ui';
 export { BasketItem } from './ui/basket-item';
 export { BasketSteps } from './ui/basket-steps';
 export { BasketCounter } from './ui/basket-counter';
+export { BasketItemCounter } from './ui/basket-item/basket-item-counter';

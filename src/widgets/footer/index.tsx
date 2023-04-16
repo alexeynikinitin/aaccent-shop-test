@@ -7,7 +7,7 @@ export const Footer: FC = () => {
   return (
     <footer className="footer">
       <Layout>
-        <div className="footer__wrapper">Footers</div>
+        <div className="footer__wrapper">Footer</div>
       </Layout>
     </footer>
   );

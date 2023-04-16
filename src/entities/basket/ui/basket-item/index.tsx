@@ -9,7 +9,9 @@ import { Button, useActions } from 'shared';
 export const BasketItem: FC<IBasketItem> = ({ count, title, id, regularPrice }) => {
   const { deleteProduct } = useActions(basketActions);
 
-  const onClickDelete = () => deleteProduct({ id });
+  const onClickDelete = (): void => {
+    deleteProduct({ id });
+  };
 
   return (
     <div className="basketItem">
