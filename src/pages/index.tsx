@@ -27,7 +27,7 @@ export const Routing: FC = () => {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Layout>
-      {!isFetching && <AppSpinner />}
+      {isFetching && <AppSpinner />}
     </section>
   );
 };
