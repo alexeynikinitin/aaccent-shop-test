@@ -19,7 +19,7 @@ export const BasketCounter: FC = () => {
     <NavLink to="/basket" className="basketCounter__nav" onClick={onClick}>
       <div className="basketCounter">
         <div className="basketCounter__icon">
-          <img src="public/icons/basket.png" alt="basket" />
+          <img src="/icons/basket.png" alt="basket" />
         </div>
         <div className="basketCounter__info">
           <span>{`${countProducts} товаров`}</span>

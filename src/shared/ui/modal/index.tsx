@@ -12,7 +12,7 @@ export const Modal: FC<IModal> = ({ children, onClickClose, top, left }) => {
             alt="close"
             onClick={onClickClose}
             className="modal__header_close"
-            src="public/icons/close.svg"
+            src="/icons/close.svg"
           />
         </div>
         <div className="modal__content">{children}</div>

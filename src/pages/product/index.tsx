@@ -58,7 +58,7 @@ const ProductPage: FC = () => {
       <div className="productPage">
         <div className="productPage__img">
           {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-          <img src={`public/images/${id}.png`} alt="image" />
+          <img src={`/images/${id}.png`} alt="image" />
         </div>
         <div className="productPage__info">
           <h1 className="productPage__info_title">{title}</h1>
