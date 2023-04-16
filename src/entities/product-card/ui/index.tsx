@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from 'react';
+import React, { FC, ReactElement, MouseEvent } from 'react';
 
 import './index.scss';
 import { useNavigate } from 'react-router-dom';
@@ -9,7 +9,8 @@ import { IRegularPrice } from 'entities/product-info/api/types';
 export const ProductCard: FC<IProductCard> = ({ count, id, regularPrice, title, basketButton }) => {
   const navigate = useNavigate();
 
-  const onClickCard = (): void => {
+  const onClickCard = (e: MouseEvent<HTMLDivElement>): void => {
+    e.preventDefault();
     navigate(`/product/${id}`);
   };
 
@@ -17,7 +18,7 @@ export const ProductCard: FC<IProductCard> = ({ count, id, regularPrice, title, 
     // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions
     <div className="productCard" onClick={onClickCard}>
       <div className="productCard__img">
-        <img src={`/images/${id}.png`} alt="img" />
+        <img src={`/aaccent-shop-test/images/${id}.png`} alt="img" />
       </div>
       <div className="productCard__title">
         <p>{title}</p>

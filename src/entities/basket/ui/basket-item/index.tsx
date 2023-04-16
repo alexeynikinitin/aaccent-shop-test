@@ -16,7 +16,7 @@ export const BasketItem: FC<IBasketItem> = ({ count, title, id, regularPrice }) 
   return (
     <div className="basketItem">
       <div className="basketItem__img">
-        <img src={`/images/${id}.png`} alt="img" />
+        <img src={`/aaccent-shop-test/images/${id}.png`} alt="img" />
       </div>
       <div className="basketItem__info">
         <div>

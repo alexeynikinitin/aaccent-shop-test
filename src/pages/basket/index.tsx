@@ -64,7 +64,7 @@ const BasketPage: FC = () => {
         <div className="basketPage__footer">
           <div className="basketPage__footer_firstBlock">
             <NavLink to="/" className="basketPage__footer_goBack" onClick={onClickGoBack}>
-              <img src="/icons/arrow-left.png" alt="arrow" />
+              <img src="/aaccent-shop-test/icons/arrow-left.png" alt="arrow" />
               <span>Продолжить покупки</span>
             </NavLink>
             {step === 'basket' && totalPrice !== 0 && (

@@ -9,7 +9,7 @@ export const BasketSteps: FC<IBasketSteps> = ({ step }) => {
     <div className="basketSteps">
       <div className="basketSteps__step">
         <div className="basketSteps__step_square activeStep">
-          <img src="/icons/basket-white.png" alt="step" />
+          <img src="/aaccent-shop-test/icons/basket-white.png" alt="step" />
         </div>
         <h4 className={`basketSteps__step_title ${step === 'basket' ? 'activeStep__text' : 'null'}`}>Корзина</h4>
       </div>

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, MouseEvent } from 'react';
 
 import { basketActions } from 'entities';
 import { Button, useActions } from 'shared';
@@ -6,7 +6,8 @@ import { Button, useActions } from 'shared';
 export const DeleteFromBasket: FC<IDeleteFromBasket> = ({ id, sizeButton }) => {
   const { deleteProduct } = useActions(basketActions);
 
-  const onClickDeleteFromBasket = (): void => {
+  const onClickDeleteFromBasket = (e: MouseEvent<HTMLButtonElement>): void => {
+    e.stopPropagation();
     deleteProduct({ id });
   };
 

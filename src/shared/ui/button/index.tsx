@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, MouseEvent } from 'react';
 
 import './index.scss';
 
@@ -16,7 +16,7 @@ export const Button: FC<IButton> = ({ size, type, title, onClick }) => {
 
 interface IButton {
   title: string;
-  onClick: () => void;
+  onClick: (e: MouseEvent<HTMLButtonElement>) => void;
   size?: 'big' | 'small';
   type: 'outlined' | 'primary';
 }
