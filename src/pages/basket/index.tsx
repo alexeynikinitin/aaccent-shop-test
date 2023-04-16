@@ -62,7 +62,7 @@ const BasketPage: FC = () => {
       {getBasketStepContent()}
       {step !== 'confirm' && step !== null && (
         <div className="basketPage__footer">
-          <div>
+          <div className="basketPage__footer_firstBlock">
             <NavLink to="/" className="basketPage__footer_goBack" onClick={onClickGoBack}>
               <img src="src/shared/assets/icons/arrow-left.png" alt="arrow" />
               <span>Продолжить покупки</span>

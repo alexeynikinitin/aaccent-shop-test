@@ -62,3 +62,56 @@
         }
     }
 }
+
+
+@media only screen and (max-width: 1300px) {
+    .productCard {
+        margin-bottom: 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40% 60% ;
+        grid-template-areas:
+            'img title'
+            'img button';
+
+        &__img {
+            grid-area: img;
+            width: 100%;
+            height: 140px;
+
+            & img {
+                width: auto;
+            }
+        }
+
+        &__title {
+            grid-area: title;
+            margin-top: 10px;
+
+            & p {
+                text-align: left;
+            }
+        }
+
+        &__counter {
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__info {
+            margin-top: 0;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            &_price {
+                grid-area: button;
+                font-style: normal;
+            }
+        }
+    }
+}

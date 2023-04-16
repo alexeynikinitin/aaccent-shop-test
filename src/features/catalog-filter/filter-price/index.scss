@@ -37,3 +37,17 @@
         }
     }
 }
+
+@media only screen and (max-width: 1300px) {
+    .filterPrice {
+        margin-top: 0;
+
+        &__items {
+            margin-top: 10px;
+
+            &_input {
+                width: 45%;
+            }
+        }
+    }
+}

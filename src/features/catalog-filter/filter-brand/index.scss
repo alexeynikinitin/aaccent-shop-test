@@ -20,3 +20,13 @@
         cursor: pointer;
     }
 }
+
+@media only screen and (max-width: 1300px) {
+    .filterBrand {
+        margin-top: 15px;
+
+        &__items {
+            margin-top: 10px;
+        }
+    }
+}

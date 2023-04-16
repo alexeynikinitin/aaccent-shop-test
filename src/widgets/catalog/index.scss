@@ -17,3 +17,16 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 1300px) {
+    .catalog {
+        margin-top: 30px;
+        margin-left: 0;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}
