@@ -1,6 +1,9 @@
-import { IProduct } from 'entities/product-info/api/types';
+import { IFilterSettings } from './IFilterSettings';
+
+import { IProduct } from 'entities';
 
 export interface ICatalogState {
-  items: IProduct[];
   count: number;
+  items: IProduct[];
+  filterSettings: IFilterSettings;
 }

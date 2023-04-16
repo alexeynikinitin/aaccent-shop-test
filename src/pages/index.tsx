@@ -1,9 +1,10 @@
-import { FC, lazy } from 'react';
+import React, { FC, lazy } from 'react';
 
 import { Route, Routes } from 'react-router-dom';
 
 import './index.scss';
-import { Layout } from 'shared';
+import { selectIsFetching } from 'entities';
+import { AppSpinner, Layout, useAppSelector } from 'shared';
 
 const LoginPage = lazy(() => import('./login'));
 const BasketPage = lazy(() => import('./basket'));
@@ -12,6 +13,8 @@ const ProductPage = lazy(() => import('./product'));
 const NotFoundPage = lazy(() => import('./not-found'));
 
 export const Routing: FC = () => {
+  const isFetching = useAppSelector(selectIsFetching);
+
   return (
     <section className="content">
       <Layout>
@@ -24,6 +27,7 @@ export const Routing: FC = () => {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Layout>
+      {isFetching && <AppSpinner />}
     </section>
   );
 };

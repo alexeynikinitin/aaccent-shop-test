@@ -1,23 +1,24 @@
 import React, { FC, useEffect } from 'react';
 
-import { selectBrands } from 'entities/brands/model/selectors';
-import { brandsActions } from 'entities/service/config/root-store';
-import { useActions, useAppSelector } from 'shared/hooks';
+import { catalogActions } from 'entities';
+import { CatalogFilter } from 'features';
+import { useActions } from 'shared';
+import { Catalog } from 'widgets';
+
+import './index.scss';
 
 const CatalogPage: FC = () => {
-  const { items } = useAppSelector(selectBrands);
-  const { getBrands } = useActions(brandsActions);
+  const { getCatalog } = useActions(catalogActions);
 
   useEffect(() => {
-    getBrands();
-  }, [getBrands]);
+    getCatalog();
+  }, [getCatalog]);
 
   return (
-    <div>
-      {items.map(item => (
-        <span key={item.id}>{item.title}</span>
-      ))}
-    </div>
+    <section className="catalogPage">
+      <CatalogFilter />
+      <Catalog />
+    </section>
   );
 };
 

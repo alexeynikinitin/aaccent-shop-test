@@ -14,7 +14,6 @@ export const store = configureStore({
     catalog: catalogReducer,
     product: productReducer,
     service: serviceReducer,
-    // Паггинизация (текущая страница, количество элементов на страницу)
   },
   middleware: getDefaultMiddleware => getDefaultMiddleware({ serializableCheck: false }).concat(thunk),
   devTools: true,

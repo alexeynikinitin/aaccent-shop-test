@@ -3,4 +3,5 @@ export interface IBrand {
   sort: string;
   code: string;
   title: string;
+  checked: boolean;
 }

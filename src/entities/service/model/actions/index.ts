@@ -1,0 +1,1 @@
+export { setIsShowModal } from './setIsShowModal';

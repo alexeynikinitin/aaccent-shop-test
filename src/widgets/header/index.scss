@@ -22,7 +22,8 @@
     &__info {
         height: 100%;
         width: 100%;
-        display: flex;
+        display: grid;
+        grid-template-columns: auto auto auto 164px;
         align-items: center;
         justify-content: space-between;
 

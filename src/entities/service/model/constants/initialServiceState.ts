@@ -4,4 +4,5 @@ export const initialServiceState: IServiceState = {
   error: null,
   isFetching: false,
   isLoggedIn: false,
+  isShowModal: false,
 };

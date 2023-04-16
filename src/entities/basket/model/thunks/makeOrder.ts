@@ -3,6 +3,8 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import { IBasketOrderInfo } from 'entities/basket/api/types';
 import { IRejectedValue } from 'shared/types/store/IRejectedValue';
 
+const DALAY = 2000;
+
 export const makeOrder = createAsyncThunk<number, IBasketOrderInfo, IRejectedValue>(
   'basketReducer/makeOrder',
   async (arg, { rejectWithValue }) => {
@@ -10,6 +12,7 @@ export const makeOrder = createAsyncThunk<number, IBasketOrderInfo, IRejectedVal
       return new Promise(resolve => {
         setTimeout(async () => {
           const response = await fetch('https://app.aaccent.su/js/confirm.php', {
+            method: 'POST',
             body: JSON.stringify(arg),
           });
 
@@ -22,7 +25,7 @@ export const makeOrder = createAsyncThunk<number, IBasketOrderInfo, IRejectedVal
           } else {
             rejectWithValue({ errorMessage: 'Ошибка оформления заказа' });
           }
-        }, 2000);
+        }, DALAY);
       });
     } catch (error: unknown) {
       return rejectWithValue({

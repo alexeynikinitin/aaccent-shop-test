@@ -1,6 +1,6 @@
 import { IBrand } from 'entities/brands/api/types';
 
-export const brands: IBrand[] = [
+export const brands: Omit<IBrand, 'checked'>[] = [
   {
     id: 1,
     title: 'Brand 1',

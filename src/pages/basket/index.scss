@@ -1,0 +1,43 @@
+.basketPage {
+    &__footer {
+        padding: 0 80px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &_goBack {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+
+            & img {
+                width: 10px;
+                height: 10px;
+            }
+
+            & span {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                margin-left: 15px;
+                color: var(--color-dark-gray);
+            }
+        }
+
+        &_totalPrice {
+            color: var(--color-dark-gray);
+
+            & span {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 42px;
+                text-align: center;
+                color: var(--color-black);
+            }
+        }
+    }
+}

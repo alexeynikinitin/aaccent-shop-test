@@ -1,1 +1,1 @@
-export { initialProductInfoState } from 'entities/product-info/model/constants/initialProductInfoState';
+export { initialServiceState } from './initialServiceState';

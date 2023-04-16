@@ -1,10 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { initialCatalogsState } from 'entities/catalog-list/model/constants';
-import { getCatalog } from 'entities/catalog-list/model/thunks';
+import * as actions from './actions';
+import { initialCatalogsState } from './constants';
+import { getCatalog } from './thunks';
 
 const slice = createSlice({
-  reducers: {},
+  reducers: actions,
   name: 'catalogReducer',
   initialState: initialCatalogsState,
   extraReducers: builder => {
@@ -12,6 +13,7 @@ const slice = createSlice({
       if (action.payload) {
         state.items = action.payload;
         state.count = action.payload.length;
+        state.filterSettings.filteredProducts = action.payload;
       }
     });
   },

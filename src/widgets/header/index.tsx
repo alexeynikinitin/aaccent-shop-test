@@ -1,18 +1,14 @@
 import React, { FC, useState } from 'react';
 
 import './index.scss';
-import { selectCountProducts, selectTotalPrice, BasketCounter, NavBar } from 'entities';
-import { Input, Layout, Logo, useAppSelector, Contacts } from 'shared';
+import { BasketCounter, NavBar } from 'entities';
+import { Contacts, Input, Layout, Logo } from 'shared';
 
 export const Header: FC = () => {
   const [valueSearch, setValueSearch] = useState<string>('');
   const [valueCategory, setValueCategory] = useState<string>('');
 
-  const totalPrice = useAppSelector(selectTotalPrice);
-  const countProducts = useAppSelector(selectCountProducts);
-
   const onChangeSearchInput = (value: string) => setValueSearch(value);
-
   const onChangeCategoryInput = (value: string) => setValueCategory(value);
 
   return (
@@ -37,7 +33,7 @@ export const Header: FC = () => {
                 />
               </div>
               <Contacts />
-              <BasketCounter totalPrice={totalPrice} countProducts={countProducts} />
+              <BasketCounter />
             </div>
           </div>
           <div className="header__section2">

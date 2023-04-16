@@ -1,14 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+import * as actions from './actions';
+import { initialServiceState } from './constants';
+
 import { makeOrder } from 'entities/basket/model/thunks';
 import { getBrands } from 'entities/brands/model/thunks';
 import { getCatalog } from 'entities/catalog-list/model/thunks';
 import { login } from 'entities/login-form/model/thunks';
 import { getProductInfo } from 'entities/product-info/model/thunks';
-import { initialServiceState } from 'entities/service/model/constants/initialServiceState';
 
 const slice = createSlice({
-  reducers: {},
+  reducers: actions,
   name: 'serviceReducer',
   initialState: initialServiceState,
   extraReducers: builder => {

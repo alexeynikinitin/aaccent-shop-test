@@ -1,6 +1,9 @@
-import { ICatalogState } from 'entities/catalog-list/api/types';
+import { ICatalogState } from 'entities';
 
 export const initialCatalogsState: ICatalogState = {
-  items: [],
   count: 0,
+  items: [],
+  filterSettings: {
+    filteredProducts: [],
+  },
 };

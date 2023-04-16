@@ -8,6 +8,10 @@
     color: var(--color-white);
     text-decoration: none;
 
+    &__active {
+        background-color: var(--color-corporate);
+    }
+
     &:hover {
         background-color: var(--color-corporate);
     }

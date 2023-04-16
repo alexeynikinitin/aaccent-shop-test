@@ -1,1 +1,1 @@
-export { selectCatalogs } from 'entities/catalog-list/model/selectors/selectCatalogs';
+export { selectCatalogList } from 'entities/catalog-list/model/selectors/selectCatalogList';

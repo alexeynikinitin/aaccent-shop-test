@@ -1,10 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+import * as actions from 'entities/brands/model/actions';
 import { initialBrandState } from 'entities/brands/model/constants/initialBrandState';
 import { getBrands } from 'entities/brands/model/thunks';
 
 const slice = createSlice({
-  reducers: {},
+  reducers: actions,
   name: 'brandReducer',
   initialState: initialBrandState,
   extraReducers: builder => {
