@@ -20,7 +20,7 @@ export const BasketItemCounter: FC<IBasketItemCounter> = ({ id, count, marginTop
       <img
         alt="arrow"
         style={{ visibility: count > 1 ? 'visible' : 'hidden' }}
-        src="src/shared/assets/icons/arrow-left.png"
+        src="public/icons/arrow-left.png"
         className="basketItemCounter__button"
         onClick={onClickDelete}
       />
@@ -32,7 +32,7 @@ export const BasketItemCounter: FC<IBasketItemCounter> = ({ id, count, marginTop
         alt="arrow"
         onClick={onClickAdd}
         className="basketItemCounter__button"
-        src="src/shared/assets/icons/arrow-right.png"
+        src="public/icons/arrow-right.png"
       />
     </div>
   );

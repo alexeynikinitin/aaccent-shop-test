@@ -17,7 +17,7 @@ export const ProductCard: FC<IProductCard> = ({ count, id, regularPrice, title, 
     // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions
     <div className="productCard" onClick={onClickCard}>
       <div className="productCard__img">
-        <img src={`src/shared/assets/images/${id}.png`} alt="img" />
+        <img src={`public/images/${id}.png`} alt="img" />
       </div>
       <div className="productCard__title">
         <p>{title}</p>

@@ -47,7 +47,7 @@ export const Pagination: FC<IPagination> = memo(props => {
     <div className="pages">
       {paginatorNumber > 1 && (
         // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions
-        <img className="pageArrow" alt="prev" src="src/shared/assets/icons/arrow-left.png" onClick={onClickPrev} />
+        <img className="pageArrow" alt="prev" src="public/icons/arrow-left.png" onClick={onClickPrev} />
       )}
       {massPages
         .filter(p => p >= leftPaginatorPageSize && p <= rightPaginatorPageSize)
@@ -64,7 +64,7 @@ export const Pagination: FC<IPagination> = memo(props => {
         ))}
       {paginatorNumber < paginatorCount - 1 && (
         // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions
-        <img className="pageArrow" alt="next" src="src/shared/assets/icons/arrow-right.png" onClick={onClickNext} />
+        <img className="pageArrow" alt="next" src="public/icons/arrow-right.png" onClick={onClickNext} />
       )}
       <select value={pageSize} name="pageSize" id="pageSize" className="pageSize" onChange={onClickPage}>
         <option value="3">3</option>

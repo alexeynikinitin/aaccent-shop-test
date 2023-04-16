@@ -6,7 +6,7 @@ const NotFoundPage: FC = () => {
   return (
     <div className="notFound">
       <h1 className="notFound__title">Страница находится в разработке</h1>
-      <img src="src/shared/assets/not-found/dev-page.png" alt="img" />
+      <img src="public/not-found/dev-page.png" alt="img" />
     </div>
   );
 };
