@@ -22,7 +22,7 @@ export const Routing: FC = () => {
           <Route path="/" element={<CatalogPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/basket" element={<BasketPage />} />
-          <Route path="/product" element={<ProductPage />} />
+          <Route path="/product/:id" element={<ProductPage />} />
 
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

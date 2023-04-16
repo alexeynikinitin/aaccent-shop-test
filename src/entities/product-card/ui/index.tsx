@@ -1,12 +1,21 @@
 import React, { FC, ReactElement } from 'react';
 
 import './index.scss';
+import { useNavigate } from 'react-router-dom';
+
 import { BasketItemCounter } from 'entities/basket/ui/basket-item/basket-item-counter';
 import { IRegularPrice } from 'entities/product-info/api/types';
 
 export const ProductCard: FC<IProductCard> = ({ count, id, regularPrice, title, basketButton }) => {
+  const navigate = useNavigate();
+
+  const onClickCard = (): void => {
+    navigate(`/product/${id}`);
+  };
+
   return (
-    <div className="productCard">
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions
+    <div className="productCard" onClick={onClickCard}>
       <div className="productCard__img">
         <img src={`src/shared/assets/images/${id}.png`} alt="img" />
       </div>

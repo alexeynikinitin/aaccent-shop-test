@@ -2,7 +2,7 @@ import './index.scss';
 import { FC, Suspense } from 'react';
 
 import { Provider as ReduxProvider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 import { store } from 'app/store';
 import { Routing } from 'pages';
@@ -12,13 +12,13 @@ import { Footer, Header } from 'widgets';
 export const App: FC = () => {
   return (
     <ReduxProvider store={store}>
-      <BrowserRouter>
+      <HashRouter>
         <Suspense fallback={<AppSpinner />}>
           <Header />
           <Routing />
           <Footer />
         </Suspense>
-      </BrowserRouter>
+      </HashRouter>
     </ReduxProvider>
   );
 };

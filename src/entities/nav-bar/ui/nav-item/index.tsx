@@ -7,10 +7,8 @@ import { INavItem } from '../../api/types';
 import './index.scss';
 
 export const NavItem: FC<INavItem> = ({ title, path }) => {
-  const currentPath = document.location.pathname;
-
   return (
-    <NavLink to={path} className={`navItem ${currentPath === path ? 'navItem__active' : ''}`}>
+    <NavLink to={path} className="navItem">
       {title}
     </NavLink>
   );
