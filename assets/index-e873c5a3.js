@@ -1,1 +1,0 @@
-import{a,j as s}from"./index-e9eda421.js";const n=()=>a("div",{className:"notFound",children:[s("h1",{className:"notFound__title",children:"Страница находится в разработке"}),s("img",{src:"src/shared/assets/not-found/dev-page.png",alt:"img"})]});export{n as default};
