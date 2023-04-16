@@ -1,0 +1,43 @@
+.modal {
+    z-index: 3;
+    width: fit-content;
+    position: absolute;
+    background-color: var(--color-white);
+    border: 1px solid #127209;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    &__header {
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px;
+
+        &_close {
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    &__content {
+        padding: 5px;
+    }
+
+    &__overlay {
+        z-index: 2;
+        position: fixed;
+        background-color: rgba(#000000, 0.2);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .modal {
+        top: 5% !important;
+        left: 40% !important;
+    }
+}
+

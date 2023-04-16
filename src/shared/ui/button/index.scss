@@ -1,0 +1,40 @@
+.button {
+    height: 37px;
+    border: none;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    padding: 9px 9px;
+    cursor: pointer;
+
+    &_big {
+        height: 60px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    &__primary {
+        color: var(--color-white);
+        border:1px solid var(--color-corporate);
+        background-color: var(--color-corporate);
+
+        &:hover {
+            color: var(--color-corporate);
+            background-color: var(--color-white);
+        }
+    }
+
+    &__outlined {
+        color: var(--color-corporate);
+        border:1px solid var(--color-corporate);
+        background-color: var(--color-white);
+
+        &:hover {
+            color: var(--color-white);
+            background-color: var(--color-corporate);
+        }
+    }
+}

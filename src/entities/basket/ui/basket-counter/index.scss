@@ -1,0 +1,31 @@
+.basketCounter__nav {
+    &:hover {
+        border: 1px solid var(--color-white);
+        border-radius: 10px;
+    }
+}
+
+.basketCounter {
+    background-color: var(--color-transparent-dark-corporate);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 20px;
+    width: 162px;
+    border-radius: 10px;
+
+
+
+    &__info {
+        color: var(--color-white);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+
+        span {
+            display: block;
+        }
+    }
+}
+

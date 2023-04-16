@@ -1,0 +1,17 @@
+.appSpinner {
+    position: absolute;
+    left: calc(50vw - 100px);
+    top: calc(50vh - 100px);
+    background-color: transparent;
+    z-index: 99;
+
+    &__overlay {
+        z-index: 98;
+        position: absolute;
+        background-color: rgba(#000000, 0.4);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}

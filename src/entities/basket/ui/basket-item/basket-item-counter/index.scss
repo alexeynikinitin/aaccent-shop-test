@@ -1,0 +1,39 @@
+.basketItemCounter {
+    display: flex;
+    align-items: center;
+
+    &__button {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 10px;
+    }
+
+    &__input {
+        border: 1px solid var(--color-light-gray);
+        border-radius: 5px;
+        color: var(--color-dark-gray);
+        max-width: 200px;
+        width: 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+        text-align: center;
+        padding: 0;
+        cursor: context-menu;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .basketItemCounter {
+        margin-top: 10px!important;
+
+        &__input {
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+}

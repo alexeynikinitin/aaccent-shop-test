@@ -1,0 +1,17 @@
+.countFilteredProducts {
+    background-color: var(--color-light-gray);
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+    & span {
+        color: var(--color-black);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+}

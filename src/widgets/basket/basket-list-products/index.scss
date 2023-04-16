@@ -1,0 +1,11 @@
+.basketListProducts {
+    margin-top: 50px;
+    padding: 0 80px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .basketListProducts {
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+}

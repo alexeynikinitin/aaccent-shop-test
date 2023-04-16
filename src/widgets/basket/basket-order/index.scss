@@ -1,0 +1,135 @@
+.basketOrder {
+    margin-top: 100px;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &__personalData {
+        width: 250px;
+
+        &_title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            text-transform: uppercase;
+            color: var(--color-black);
+        }
+
+        &_input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid var(--color-light-gray);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+            letter-spacing: 0.02em;
+            color: var(--color-dark-gray);
+            padding: 10px 0;
+            margin-top: 20px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: var(--color-light-gray);
+            }
+        }
+    }
+
+    &__delivery {
+        width: 490px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            text-transform: uppercase;
+            color: var(--color-black);
+            margin-bottom: 50px;
+        }
+
+        &_item {
+            align-items: center;
+            margin-bottom: 30px;
+
+            &-check {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            &-title {
+                margin-left: 10px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+            }
+
+            &-subtitle {
+                margin-left: 35px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .basketOrder {
+        display: block;
+        margin-top: 40px;
+        padding: 0 20px;
+
+        &__personalData {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &_input {
+                font-size: 14px;
+                line-height: 18px;
+                padding: 5px 0;
+                margin-top: 20px;
+            }
+        }
+
+        &__delivery {
+            width: auto;
+            margin-top: 40px;
+
+            &_title {
+                margin-bottom: 20px;
+            }
+
+            &_item {
+                align-items: center;
+                margin-bottom: 10px;
+
+                &-check {
+                    margin-bottom: 5px;
+                }
+
+                &-title {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+
+                &-subtitle {
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+}

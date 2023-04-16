@@ -1,0 +1,10 @@
+.content {
+    width: 100%;
+    min-height: calc(100vh - 202px - 100px - 70px);
+}
+
+@media only screen and (max-width: 1300px) {
+    .content {
+        min-height: calc(100vh - 126px - 100px - 70px);
+    }
+}

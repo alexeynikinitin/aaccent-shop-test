@@ -1,0 +1,95 @@
+.basketPage {
+    &__footer {
+        padding: 0 80px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &_goBack {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+
+            & img {
+                width: 10px;
+                height: 10px;
+            }
+
+            & span {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                margin-left: 15px;
+                color: var(--color-dark-gray);
+            }
+        }
+
+        &_totalPrice {
+            color: var(--color-dark-gray);
+
+            & span {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 42px;
+                text-align: center;
+                color: var(--color-black);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .basketPage {
+        display: flex;
+        flex-direction: column;
+
+        &__footer {
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+            margin-top: 30px;
+            align-items: center;
+
+            &_firstBlock {
+                display: flex;
+                align-items: center;
+            }
+
+            &_goBack {
+                margin-bottom: 0;
+                margin-right: 10px;
+
+                & span {
+                    font-size: 14px;
+                    line-height: 18px;
+                    margin-left: 15px;
+                }
+            }
+
+            &_totalPrice {
+                margin-top: 15px;
+                text-align: center;
+
+                & span {
+                    font-size: 24px;
+                    line-height: 0;
+                }
+
+                & p {
+                    font-size: 14px;
+                }
+            }
+
+            & .button_big {
+                margin-top: 15px;
+                height: 40px;
+                font-size: 14px;
+                line-height: 14px;
+            }
+        }
+    }
+}

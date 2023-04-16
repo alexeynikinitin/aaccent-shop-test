@@ -1,0 +1,18 @@
+.navItem {
+    background-color: var(--color-dark-gray);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    text-decoration: none;
+
+    &__active {
+        background-color: var(--color-corporate);
+    }
+
+    &:hover {
+        background-color: var(--color-corporate);
+    }
+}

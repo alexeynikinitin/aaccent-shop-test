@@ -1,0 +1,15 @@
+.brandItem {
+    display: flex;
+    align-items: center;
+    margin: 9px 0;
+    cursor: pointer;
+
+    &__title {
+        margin-left: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--color-black-title);
+    }
+}
