@@ -1,0 +1,1 @@
+import{j as p}from"./index-0c128b64.js";const c=({id:t,checked:r,onClickCheckbox:s,readOnly:a})=>p("input",{className:"checkbox",type:"checkbox",onClick:()=>{s==null||s(t)},checked:r,readOnly:a});export{c as C};
