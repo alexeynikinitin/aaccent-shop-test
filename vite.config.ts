@@ -8,4 +8,5 @@ export default defineConfig({
 		react(),
 		viteTsConfigPaths({}),
 	],
+  base: '/aaccent-shop-test/'
 })
